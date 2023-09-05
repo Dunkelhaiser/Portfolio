@@ -20,8 +20,8 @@
             }
         ],
         "paths": {
-            "@components/*": ["./src/components/*"],
             "@ui/*": ["./src/components/ui/*"],
+            "@components/*": ["./src/components/*"],
             "@utils/*": ["./src/utils/*"],
             "@hooks/*": ["./src/hooks/*"],
             "@models/*": ["./src/models/*"],
