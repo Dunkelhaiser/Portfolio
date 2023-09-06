@@ -40,7 +40,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            <Image className="mt-10 w-full rounded-xl object-cover lg:col-span-1 lg:mt-0 xl:col-span-4" src={Avatar} alt="Avatar" />
+            <Image
+                className="ml-auto mt-10 rounded-xl object-cover max-xl:w-full lg:col-span-1 lg:mt-0 xl:col-span-4"
+                src={Avatar}
+                alt="Avatar"
+            />
         </section>
     );
 };
