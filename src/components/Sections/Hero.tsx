@@ -6,7 +6,7 @@ import Avatar from "../../../public/Avatar.png";
 
 const Hero = () => {
     return (
-        <section className="mx-auto grid max-w-[85rem] place-items-center px-4 sm:my-[-2rem] sm:h-screen sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:px-8 xl:grid-cols-7 xl:gap-x-12">
+        <section className="mx-auto grid max-w-[85rem] place-content-center px-4 sm:my-[-2rem] sm:h-screen sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:px-8 xl:grid-cols-7 xl:gap-x-12">
             <div className="lg:col-span-1 xl:col-span-3">
                 <h1 className="block text-3xl font-bold max-sm:text-center sm:text-4xl md:text-5xl lg:text-6xl">Kyrylo Tymchyshyn</h1>
                 <p className="mt-3 text-lg text-zinc-700 max-sm:text-center">
