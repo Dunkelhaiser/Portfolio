@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Providers from "@components/Providers";
+import Header from "@components/Header";
 import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body className={`${montserrat.className} bg-zinc-100 px-2 py-6 text-zinc-900 sm:p-8`}>
                 <Providers>
+                    <Header />
                     <main>{children}</main>
                 </Providers>
             </body>
