@@ -44,6 +44,7 @@ const Hero = () => {
                 className="ml-auto mt-10 rounded-xl object-cover max-xl:w-full lg:col-span-1 lg:mt-0 xl:col-span-4"
                 src={Avatar}
                 alt="Avatar"
+                priority
             />
         </section>
     );
