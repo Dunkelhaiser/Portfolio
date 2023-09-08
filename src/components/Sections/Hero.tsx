@@ -1,14 +1,34 @@
+"use client";
+
+import { useContext, useEffect } from "react";
 import Image from "next/image";
 import { LuExternalLink, LuMail } from "react-icons/lu";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Button from "@ui/Button";
+import { SectionContext } from "@context/SectionContext";
+import { useInView } from "react-intersection-observer";
 import Avatar from "../../../public/Avatar.png";
 
 const Hero = () => {
+    const { setActiveSection } = useContext(SectionContext);
+    const { ref, inView } = useInView({
+        threshold: 0.75,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection("Home");
+        }
+    }, [inView, setActiveSection]);
+
     return (
-        <section className="mx-auto grid max-w-[85rem] place-content-center px-4 sm:my-[-2rem] sm:h-screen sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:px-8 xl:grid-cols-7 xl:gap-x-12">
+        <section
+            ref={ref}
+            className="grid place-content-center sm:h-screen lg:grid-cols-2 lg:items-center lg:gap-x-8 xl:grid-cols-7 xl:gap-x-12"
+            id="home"
+        >
             <div className="lg:col-span-1 xl:col-span-3">
-                <h1 className="block text-3xl font-bold max-sm:text-center sm:text-4xl md:text-5xl lg:text-6xl">Kyrylo Tymchyshyn</h1>
+                <h1 className="block text-4xl font-bold max-sm:text-center md:text-5xl lg:text-6xl">Kyrylo Tymchyshyn</h1>
                 <p className="mt-3 text-lg text-zinc-700 max-sm:text-center">
                     I&apos;m a skilled web developer, and I my mission is to turn inovative ideas into reality. Explore my latest projects
                     in the web industry.

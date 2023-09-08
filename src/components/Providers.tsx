@@ -1,5 +1,6 @@
 "use client";
 
+import SectionContextProvider from "@context/SectionContext";
 import { ThemeProvider } from "next-themes";
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 const Providers = ({ children }: Props) => {
     return (
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
+            <SectionContextProvider>{children}</SectionContextProvider>
         </ThemeProvider>
     );
 };

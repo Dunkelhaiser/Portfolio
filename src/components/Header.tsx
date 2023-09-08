@@ -8,8 +8,11 @@ import { BsDiagram3Fill } from "react-icons/bs";
 import { PiProjectorScreenBold } from "react-icons/pi";
 import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@ui/Tooltip";
+import { cn } from "@utils/cn";
+import { useContext } from "react";
+import { SectionContext } from "@context/SectionContext";
 
-const links = [
+export const links = [
     {
         name: "Home",
         icon: <FaHome />,
@@ -43,6 +46,7 @@ const links = [
 ] as const;
 
 const Header = () => {
+    const { activeSection, setActiveSection } = useContext(SectionContext);
     return (
         <motion.header
             className="fixed right-8 top-1/2 z-[999] h-96 w-[3.25rem] rounded-lg bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur [--horizontal-from:100px] [--horizontal-to:0px] [--vertical-from:-50%] [--vertical-to:-50%] max-sm:bottom-6 max-sm:left-6 max-sm:right-6 max-sm:top-auto max-sm:h-[3.25rem] max-sm:w-auto max-sm:[--horizontal-from:0px] max-sm:[--horizontal-to:0px] max-sm:[--vertical-from:50%] max-sm:[--vertical-to:0%]"
@@ -52,14 +56,21 @@ const Header = () => {
             <nav className="h-full w-full">
                 <ul className="flex h-full w-full flex-col items-center justify-center gap-5 max-sm:flex-row max-sm:justify-evenly max-sm:gap-2">
                     {links.map((link) => (
-                        <li key={link.href}>
+                        <motion.li key={link.href} className="relative">
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
                                         <Link
                                             aria-label={link.name}
                                             href={link.href}
-                                            className="flex w-full items-center justify-center px-3 py-3 text-xl text-zinc-500 transition hover:text-zinc-900"
+                                            onClick={() => setActiveSection(link.name)}
+                                            className={cn(
+                                                "flex w-full items-center justify-center rounded-md px-3 py-3 text-xl text-zinc-500 transition  hover:text-zinc-900",
+                                                {
+                                                    "cursor-default bg-sky-800 text-zinc-50 hover:text-zinc-50":
+                                                        activeSection === link.name,
+                                                }
+                                            )}
                                         >
                                             {link.icon}
                                         </Link>
@@ -69,7 +80,7 @@ const Header = () => {
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
-                        </li>
+                        </motion.li>
                     ))}
                 </ul>
             </nav>

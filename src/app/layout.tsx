@@ -13,8 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
-            <body className={`${montserrat.className} bg-zinc-100 px-2 py-6 text-zinc-900 sm:p-8`}>
+        <html lang="en" className="scroll-smooth">
+            <body
+                className={`${montserrat.className} mx-auto h-[9999px] max-w-[85rem] bg-zinc-100 px-6 py-6 text-zinc-900 max-sm:mb-16 sm:my-[-2rem] sm:p-8 sm:px-8 lg:px-10`}
+            >
                 <Providers>
                     <Header />
                     <main>{children}</main>
