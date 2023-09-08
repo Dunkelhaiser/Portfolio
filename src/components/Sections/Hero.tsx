@@ -27,12 +27,17 @@ const Hero = () => {
                     </div>
                     <div className="flex flex-row items-center gap-2 sm:gap-3 ">
                         <Button size="iconLarge" variant="secondary" asChild>
-                            <a href="https://www.linkedin.com/in/kyrylo-tymchyshyn/" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href="https://www.linkedin.com/in/kyrylo-tymchyshyn/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
                                 <FaLinkedin />
                             </a>
                         </Button>
                         <Button size="iconLarge" variant="secondary" asChild>
-                            <a href="https://github.com/KaeserOfHonour" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/KaeserOfHonour" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <FaGithub />
                             </a>
                         </Button>

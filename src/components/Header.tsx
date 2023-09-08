@@ -57,6 +57,7 @@ const Header = () => {
                                 <Tooltip>
                                     <TooltipTrigger asChild>
                                         <Link
+                                            aria-label={link.name}
                                             href={link.href}
                                             className="flex w-full items-center justify-center px-3 py-3 text-xl text-zinc-500 transition hover:text-zinc-900"
                                         >
