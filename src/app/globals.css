@@ -13,6 +13,11 @@
         -webkit-touch-callout: none;
     }
 
+    *::selection {
+        color: #fafafa;
+        background-color: #617591;
+    }
+
     ::-webkit-scrollbar {
         width: 7px;
     }
