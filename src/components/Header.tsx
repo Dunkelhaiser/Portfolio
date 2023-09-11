@@ -71,7 +71,7 @@ const Header = () => {
                                             href={link.href}
                                             onClick={() => setActiveSection(link.name)}
                                             className={cn(
-                                                "flex w-full items-center justify-center rounded-md px-3 py-3 text-xl text-zinc-500 transition  hover:text-zinc-900",
+                                                "flex w-full items-center justify-center rounded-md px-3 py-3 text-base text-zinc-500 transition hover:text-zinc-900  sm:text-xl",
                                                 {
                                                     "cursor-default bg-sky-800 text-zinc-50 hover:text-zinc-50":
                                                         activeSection === link.name,
