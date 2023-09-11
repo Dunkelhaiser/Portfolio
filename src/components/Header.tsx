@@ -51,7 +51,7 @@ export const links = [
 ] as const;
 
 const Header = () => {
-    const { activeSection, setActiveSection } = useContext(SectionContext);
+    const { activeSection } = useContext(SectionContext);
     return (
         <motion.header
             className="fixed right-8 top-1/2 z-[999] h-[27.35rem] w-[3.25rem] rounded-lg bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur [--horizontal-from:100px] [--horizontal-to:0px] [--vertical-from:-50%] [--vertical-to:-50%] max-sm:bottom-6 max-sm:left-6 max-sm:right-6 max-sm:top-auto max-sm:h-[3.25rem] max-sm:w-auto max-sm:[--horizontal-from:0px] max-sm:[--horizontal-to:0px] max-sm:[--vertical-from:50%] max-sm:[--vertical-to:0%]"
@@ -69,7 +69,6 @@ const Header = () => {
                                         <Link
                                             aria-label={link.name}
                                             href={link.href}
-                                            onClick={() => setActiveSection(link.name)}
                                             className={cn(
                                                 "flex w-full items-center justify-center rounded-md px-3 py-3 text-base text-zinc-500 transition hover:text-zinc-900  sm:text-xl",
                                                 {
