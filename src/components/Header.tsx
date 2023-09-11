@@ -52,6 +52,7 @@ const Header = () => {
             className="fixed right-8 top-1/2 z-[999] h-96 w-[3.25rem] rounded-lg bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur [--horizontal-from:100px] [--horizontal-to:0px] [--vertical-from:-50%] [--vertical-to:-50%] max-sm:bottom-6 max-sm:left-6 max-sm:right-6 max-sm:top-auto max-sm:h-[3.25rem] max-sm:w-auto max-sm:[--horizontal-from:0px] max-sm:[--horizontal-to:0px] max-sm:[--vertical-from:50%] max-sm:[--vertical-to:0%]"
             initial={{ x: "var(--horizontal-from)", y: "var(--vertical-from)", opacity: 0 }}
             animate={{ x: "var(--horizontal-to)", y: "var(--vertical-to)", opacity: 1 }}
+            transition={{ delay: 0.25 }}
         >
             <nav className="h-full w-full">
                 <ul className="flex h-full w-full flex-col items-center justify-center gap-5 max-sm:flex-row max-sm:justify-evenly max-sm:gap-2">
