@@ -7,7 +7,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Button from "@ui/Button";
 import { SectionContext } from "@context/SectionContext";
 import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import Avatar from "../../../public/Avatar.png";
 
 const Hero = () => {
@@ -23,12 +22,10 @@ const Hero = () => {
     }, [inView, setActiveSection]);
 
     return (
-        <motion.section
+        <section
             ref={ref}
             className="grid place-content-center sm:h-screen lg:grid-cols-2 lg:items-center lg:gap-x-8 xl:grid-cols-7 xl:gap-x-12"
             id="home"
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
         >
             <div className="lg:col-span-1 xl:col-span-3">
                 <h1 className="block text-4xl font-bold max-sm:text-center md:text-5xl lg:text-6xl">Kyrylo Tymchyshyn</h1>
@@ -74,7 +71,7 @@ const Hero = () => {
                 alt="Avatar"
                 priority
             />
-        </motion.section>
+        </section>
     );
 };
 export default Hero;
