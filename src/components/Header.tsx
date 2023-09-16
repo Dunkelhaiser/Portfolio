@@ -19,7 +19,7 @@ export const links = [
         href: "#home",
     },
     {
-        name: "About",
+        name: "About Me",
         icon: <FaUser />,
         href: "#about",
     },

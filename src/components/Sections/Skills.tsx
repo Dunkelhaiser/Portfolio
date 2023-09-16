@@ -1,12 +1,7 @@
-"use client";
-
-import { useContext, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import { BsShareFill } from "react-icons/bs";
 import { IoMdBrowsers } from "react-icons/io";
 import { FaServer } from "react-icons/fa";
 import { PiToolboxFill } from "react-icons/pi";
-import { SectionContext } from "@context/SectionContext";
 import { Skill as SkillType } from "@models/Skill";
 import Skill from "@components/Skill";
 import Section from "./Section";
@@ -192,19 +187,8 @@ const SkillColumn = ({ title, skills, icon, className }: Props) => {
 };
 
 const Skills = () => {
-    const { setActiveSection } = useContext(SectionContext);
-    const { ref, inView } = useInView({
-        threshold: 0.65,
-    });
-
-    useEffect(() => {
-        if (inView) {
-            setActiveSection("Skills");
-        }
-    }, [inView, setActiveSection]);
-
     return (
-        <Section id="skills" heading="Skills" className="mt-20" ref={ref}>
+        <Section id="skills" heading="Skills" className="mt-20" threshold={0.65}>
             <div className="mt-4 grid w-full grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-2 xl:grid-cols-3">
                 <SkillColumn title="Frontend" skills={frontendSkills} icon={<IoMdBrowsers className="text-3xl" />} />
                 <SkillColumn title="Backend" skills={backendSkills} icon={<FaServer className="text-3xl" />} />
