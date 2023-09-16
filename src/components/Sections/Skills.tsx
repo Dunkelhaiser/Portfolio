@@ -81,9 +81,19 @@ const backendSkills = [
         link: "https://expressjs.com/",
     },
     {
+        name: "NestJS",
+        icon: "icons/nestjs.svg",
+        link: "https://nestjs.com/",
+    },
+    {
         name: "Prisma",
         icon: "icons/prisma.svg",
         link: "https://www.prisma.io/",
+    },
+    {
+        name: "TypeORM",
+        icon: "icons/typeorm.svg",
+        link: "https://typeorm.io/",
     },
     {
         name: "PostgreSQL",
