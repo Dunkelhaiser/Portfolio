@@ -3,6 +3,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
+import Button from "@ui/Button";
 import Section from "./Section";
 
 const education = [
@@ -29,6 +30,7 @@ const education = [
         name: "Udemy",
         description: "Place where I study a lot of different topics.",
         icon: "/icons/education/udemy.svg",
+        link: "/Certificates.zip",
     },
 ];
 
@@ -46,13 +48,25 @@ const Education = () => {
                             borderRadius: "0.5rem",
                         }}
                         contentArrowStyle={{ borderRight: "7px solid#fafafa" }}
-                        iconStyle={{ background: "#fafafa", color: "#fafafa", borderRadius: "0.5rem" }}
-                        icon={<Image src={ed.icon} alt={ed.name} width={50} height={50} className="h-full w-full rounded-lg bg-white" />}
+                        iconStyle={{
+                            background: "#fafafa",
+                            color: "#fafafa",
+                            borderRadius: "0.5rem",
+                            boxShadow: "0 0 0 4px #fafafa, inset 0 2px 0 rgb(0 0 0 / 0.1), 0 2.5px 0 3px rgb(0 0 0 / 0.1)",
+                        }}
+                        icon={<Image src={ed.icon} alt={ed.name} width={50} height={50} className="h-full w-full rounded-lg bg-zinc-50" />}
                         date={ed.duration}
                     >
                         <h3 className="text-lg font-bold">{ed.name}</h3>
                         {ed.subName && <h4 className="text-sm font-semibold text-zinc-500">{ed.subName}</h4>}
-                        <p className="text-zinc-700">{ed.description}</p>
+                        <p className="!mt-2 text-zinc-700">{ed.description}</p>
+                        {ed.link && (
+                            <Button size="small" className="mt-2" asChild>
+                                <a href={ed.link} target="_blank" rel="noopener noreferrer">
+                                    My Certificates
+                                </a>
+                            </Button>
+                        )}
                     </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
