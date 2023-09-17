@@ -36,7 +36,7 @@ const education = [
 
 const Education = () => {
     return (
-        <Section id="education" heading="Education" className="mt-20" threshold={0.65}>
+        <Section id="education" heading="Education" className="mt-8 sm:mt-20" threshold={0.65}>
             <VerticalTimeline lineColor="">
                 {education.map((ed) => (
                     <VerticalTimelineElement
