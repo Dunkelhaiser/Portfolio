@@ -28,7 +28,7 @@ const Section = forwardRef<HTMLDivElement, Props>(({ id, heading, children, clas
     }, [heading, inView, setActiveSection]);
 
     return (
-        <section id={id} className={cn("flex flex-col items-center text-center", className)} ref={mergeRefs([ref, iRef])}>
+        <section id={id} className={cn("flex flex-col items-center", className)} ref={mergeRefs([ref, iRef])}>
             <h2 className="mt-8 text-3xl font-bold max-sm:mt-12 md:text-4xl">{heading}</h2>
             {children}
         </section>

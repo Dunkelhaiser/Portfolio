@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --line-color: #fafafa;
+    }
+
     *,
     *::before,
     *::after {
