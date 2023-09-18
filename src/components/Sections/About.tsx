@@ -2,7 +2,7 @@ import Section from "./Section";
 
 const About = () => {
     return (
-        <Section id="about" heading="About Me" className="mt-0 sm:mt-0" threshold={1}>
+        <Section id="about" heading="About Me" className="sm:mt-0" threshold={1}>
             <p className="mt-3 max-w-prose text-center text-lg text-zinc-700">
                 My name is Kyrylo and I&apos;m 19 years old. I am a computer science student at Ivan Franko National University of Lviv. I
                 became interested in programming at the age of 12. My first program was written in C++, but I found my passion in web
