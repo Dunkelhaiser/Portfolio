@@ -9,57 +9,57 @@ import Section from "./Section";
 const frontendSkills = [
     {
         name: "HTML",
-        icon: "icons/html.svg",
+        icon: "icons/skills/html.svg",
         link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
         name: "CSS",
-        icon: "icons/css.svg",
+        icon: "icons/skills/css.svg",
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
         name: "SASS",
-        icon: "icons/sass.svg",
+        icon: "icons/skills/sass.svg",
         link: "https://sass-lang.com/",
     },
     {
         name: "TailwindCSS",
-        icon: "icons/tailwind.svg",
+        icon: "icons/skills/tailwind.svg",
         link: "https://tailwindcss.com/",
     },
     {
         name: "React",
-        icon: "icons/react.svg",
+        icon: "icons/skills/react.svg",
         link: "https://react.dev/",
     },
     {
         name: "Redux Toolkit",
-        icon: "icons/redux.svg",
+        icon: "icons/skills/redux.svg",
         link: "https://redux-toolkit.js.org/",
     },
     {
         name: "React Router",
-        icon: "icons/react-router.svg",
+        icon: "icons/skills/react-router.svg",
         link: "https://reactrouter.com/",
     },
     {
         name: "React Query",
-        icon: "icons/react-query.svg",
+        icon: "icons/skills/react-query.svg",
         link: "https://tanstack.com/query/latest/",
     },
     {
         name: "React Hook Form",
-        icon: "icons/react-hook-form.svg",
+        icon: "icons/skills/react-hook-form.svg",
         link: "https://react-hook-form.com/",
     },
     // {
     //     name: "Framer Motion",
-    //     icon: "icons/framer-motion.svg",
+    //     icon: "icons/skills/framer-motion.svg",
     //     link: "https://www.framer.com/motion/",
     // },
     {
         name: "NextJS",
-        icon: "icons/nextjs.svg",
+        icon: "icons/skills/nextjs.svg",
         link: "https://nextjs.org/",
     },
 ];
@@ -67,32 +67,32 @@ const frontendSkills = [
 const backendSkills = [
     {
         name: "NodeJS",
-        icon: "icons/nodejs.svg",
+        icon: "icons/skills/nodejs.svg",
         link: "https://nodejs.org/",
     },
     {
         name: "ExpressJS",
-        icon: "icons/express.svg",
+        icon: "icons/skills/express.svg",
         link: "https://expressjs.com/",
     },
     {
         name: "NestJS",
-        icon: "icons/nestjs.svg",
+        icon: "icons/skills/nestjs.svg",
         link: "https://nestjs.com/",
     },
     {
         name: "Prisma",
-        icon: "icons/prisma.svg",
+        icon: "icons/skills/prisma.svg",
         link: "https://www.prisma.io/",
     },
     {
         name: "TypeORM",
-        icon: "icons/typeorm.svg",
+        icon: "icons/skills/typeorm.svg",
         link: "https://typeorm.io/",
     },
     {
         name: "PostgreSQL",
-        icon: "icons/postgresql.svg",
+        icon: "icons/skills/postgresql.svg",
         link: "https://www.postgresql.org/",
     },
 ];
@@ -100,22 +100,22 @@ const backendSkills = [
 const shared = [
     {
         name: "JavaScript",
-        icon: "icons/javascript.svg",
+        icon: "icons/skills/javascript.svg",
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
         name: "TypeScript",
-        icon: "icons/typescript.svg",
+        icon: "icons/skills/typescript.svg",
         link: "https://www.typescriptlang.org/",
     },
     {
         name: "Zod",
-        icon: "icons/zod.svg",
+        icon: "icons/skills/zod.svg",
         link: "https://zod.dev/",
     },
     {
         name: "Vitest",
-        icon: "icons/vitest.svg",
+        icon: "icons/skills/vitest.svg",
         link: "https://vitest.dev/",
     },
 ];
@@ -123,42 +123,42 @@ const shared = [
 const toolbox = [
     {
         name: "Git",
-        icon: "icons/git.svg",
+        icon: "icons/skills/git.svg",
         link: "https://git-scm.com/",
     },
     {
         name: "GitHub",
-        icon: "icons/github.svg",
+        icon: "icons/skills/github.svg",
         link: "https://github.com/",
     },
     {
         name: "ESLint",
-        icon: "icons/eslint.svg",
+        icon: "icons/skills/eslint.svg",
         link: "https://eslint.org/",
     },
     {
         name: "Prettier",
-        icon: "icons/prettier.svg",
+        icon: "icons/skills/prettier.svg",
         link: "https://prettier.io/",
     },
     {
         name: "NPM",
-        icon: "icons/npm.svg",
+        icon: "icons/skills/npm.svg",
         link: "https://www.npmjs.com/",
     },
     {
         name: "Insomnia",
-        icon: "icons/insomnia.svg",
+        icon: "icons/skills/insomnia.svg",
         link: "https://insomnia.rest/",
     },
     {
         name: "VSCode",
-        icon: "icons/vscode.svg",
+        icon: "icons/skills/vscode.svg",
         link: "https://code.visualstudio.com/",
     },
     {
         name: "Markdown",
-        icon: "icons/markdown.svg",
+        icon: "icons/skills/markdown.svg",
         link: "https://www.markdownguide.org/",
     },
 ];
