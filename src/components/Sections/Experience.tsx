@@ -13,7 +13,7 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <Section id="experience" heading="Experience" className="mt-8 sm:mt-20" threshold={0.65}>
+        <Section id="experience" heading="Experience" threshold={0.65}>
             <Timeline elements={experiences} />
         </Section>
     );

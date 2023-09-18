@@ -188,7 +188,7 @@ const SkillColumn = ({ title, skills, icon, className }: Props) => {
 
 const Skills = () => {
     return (
-        <Section id="skills" heading="Skills" className="mt-8 sm:mt-20" threshold={0.65}>
+        <Section id="skills" heading="Skills" threshold={0.65}>
             <div className="mt-4 grid w-full grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-2 xl:grid-cols-3">
                 <SkillColumn title="Frontend" skills={frontendSkills} icon={<IoMdBrowsers className="text-3xl" />} />
                 <SkillColumn title="Backend" skills={backendSkills} icon={<FaServer className="text-3xl" />} />
