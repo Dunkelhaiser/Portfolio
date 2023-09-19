@@ -13,6 +13,8 @@ type Props = {
         description: string;
         icon: string;
         link?: string;
+        button?: string;
+        buttonLabel?: string;
     }[];
 };
 
@@ -35,16 +37,20 @@ const Timeline = ({ elements }: Props) => {
                         borderRadius: "0.5rem",
                         boxShadow: "0 0 0 4px #fafafa, inset 0 2px 0 rgb(0 0 0 / 0.1), 0 2.5px 0 3px rgb(0 0 0 / 0.1)",
                     }}
-                    icon={<Image src={el.icon} alt={el.title} width={50} height={50} className="h-full w-full rounded-lg bg-zinc-50" />}
+                    icon={
+                        <a href={el.link} target="_blank" rel="noopener noreferrer">
+                            <Image src={el.icon} alt={el.title} width={50} height={50} className="h-full w-full rounded-lg bg-zinc-50" />
+                        </a>
+                    }
                     date={el.duration}
                 >
                     <h3 className="text-lg font-bold">{el.title}</h3>
                     {el.subTitle && <h4 className="text-sm font-semibold text-zinc-500">{el.subTitle}</h4>}
                     <p className="!mt-2 text-zinc-700">{el.description}</p>
-                    {el.link && (
+                    {el.button && (
                         <Button size="small" className="mt-2" asChild>
-                            <a href={el.link} target="_blank" rel="noopener noreferrer">
-                                My Certificates
+                            <a href={el.button} target="_blank" rel="noopener noreferrer">
+                                {el.buttonLabel}
                             </a>
                         </Button>
                     )}
