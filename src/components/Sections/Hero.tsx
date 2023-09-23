@@ -41,8 +41,10 @@ const Hero = () => {
                                 Resume <LuExternalLink />
                             </a>
                         </Button>
-                        <Button size="large" variant="secondary">
-                            Contact <LuMail />
+                        <Button size="large" variant="secondary" asChild>
+                            <a href="#contact">
+                                Contact <LuMail />
+                            </a>
                         </Button>
                     </div>
                     <div className="flex flex-row items-center gap-2 sm:gap-3 ">
