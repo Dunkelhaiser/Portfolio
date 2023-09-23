@@ -1,34 +1,35 @@
 "use client";
 
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@ui/Form";
-import { z as zod } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@ui/Input";
 import Button from "@ui/Button";
 import { Textarea } from "@ui/Textarea";
-
-const formSchema = zod.object({
-    email: zod.string().email({ message: "Please enter a valid email address" }),
-    message: zod
-        .string()
-        .min(10, { message: "Please enter at least 10 characters" })
-        .max(1000, { message: "Please enter no more than 1000 characters" }),
-});
-
-type FormValues = zod.infer<typeof formSchema>;
+import { FormValues, formSchema } from "@models/Form";
+import { sendEmail } from "@utils/sendEmail";
+import { toast } from "@ui/useToast";
 
 const ContactForm = () => {
     const form = useForm<FormValues>({
         resolver: zodResolver(formSchema),
+        mode: "onBlur",
         defaultValues: {
             email: "",
             message: "",
         },
     });
-    const onSubmit = (data: FormValues) => {
-        console.log(data);
+
+    const onSubmit = async (values: FormValues) => {
+        try {
+            const res = await sendEmail(values);
+            toast({ description: res.message });
+            form.reset();
+        } catch (err) {
+            toast({ description: "Something went wrong" });
+        }
     };
+
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="w-full max-w-prose space-y-4 max-sm:space-y-2">
@@ -59,11 +60,12 @@ const ContactForm = () => {
                     )}
                 />
 
-                <Button type="submit" className="max-sm:w-full">
+                <Button type="submit" className="max-sm:w-full" loading={form.formState.isSubmitting}>
                     Submit
                 </Button>
             </form>
         </Form>
     );
 };
+
 export default ContactForm;

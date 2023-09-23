@@ -1,3 +1,4 @@
+import Footer from "@components/Footer";
 import About from "@components/Sections/About";
 import Contact from "@components/Sections/Contact";
 import Education from "@components/Sections/Education";
@@ -16,6 +17,7 @@ export default function Home() {
             <Projects />
             <Experience />
             <Contact />
+            <Footer />
         </>
     );
 }
