@@ -30,8 +30,8 @@ const Hero = () => {
             <div className="lg:col-span-1 xl:col-span-3">
                 <h1 className="block text-4xl font-bold max-sm:text-center md:text-5xl lg:text-6xl">Kyrylo Tymchyshyn</h1>
                 <p className="mt-3 text-lg text-zinc-700 max-sm:text-center">
-                    I&apos;m a skilled web developer, and I my mission is to turn inovative ideas into reality. Explore my latest projects
-                    in the web industry.
+                    I&apos;m a skilled web developer, and my mission is to turn innovative ideas into reality. Explore my latest projects in
+                    the web industry.
                 </p>
 
                 <div className="mt-5 flex flex-row items-center gap-2 max-sm:flex-col sm:gap-3 lg:mt-8">
