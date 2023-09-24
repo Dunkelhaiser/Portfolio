@@ -47,6 +47,14 @@ const projects = [
         image: "/projects/hangem.png",
         tags: ["React", "TypeScript", "TailwindCSS"],
     },
+    {
+        name: "Portfolio",
+        description: "My personal portfolio website built with NextJS.",
+        link: "https://kyrylo-tymchyshyn.vercel.app",
+        github: "https://github.com/KaeserOfHonour/Portfolio",
+        image: "/projects/portfolio.png",
+        tags: ["NextJS", "React", "TypeScript", "TailwindCSS"],
+    },
 ];
 
 const Projects = () => {
