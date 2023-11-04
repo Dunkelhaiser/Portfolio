@@ -91,6 +91,21 @@ const backendSkills = [
         link: "https://typeorm.io/",
     },
     {
+        name: "Java",
+        icon: "icons/skills/java.svg",
+        link: "https://www.oracle.com/java/",
+    },
+    {
+        name: "Spring Boot",
+        icon: "icons/skills/spring.svg",
+        link: "https://spring.io/",
+    },
+    {
+        name: "Hibernate",
+        icon: "icons/skills/hibernate.svg",
+        link: "https://hibernate.org/",
+    },
+    {
         name: "PostgreSQL",
         icon: "icons/skills/postgresql.svg",
         link: "https://www.postgresql.org/",
@@ -114,6 +129,21 @@ const shared = [
         link: "https://zod.dev/",
     },
     {
+        name: "ESLint",
+        icon: "icons/skills/eslint.svg",
+        link: "https://eslint.org/",
+    },
+    {
+        name: "Prettier",
+        icon: "icons/skills/prettier.svg",
+        link: "https://prettier.io/",
+    },
+    {
+        name: "NPM",
+        icon: "icons/skills/npm.svg",
+        link: "https://www.npmjs.com/",
+    },
+    {
         name: "Vitest",
         icon: "icons/skills/vitest.svg",
         link: "https://vitest.dev/",
@@ -132,29 +162,19 @@ const toolbox = [
         link: "https://github.com/",
     },
     {
-        name: "ESLint",
-        icon: "icons/skills/eslint.svg",
-        link: "https://eslint.org/",
+        name: "VSCode",
+        icon: "icons/skills/vscode.svg",
+        link: "https://code.visualstudio.com/",
     },
     {
-        name: "Prettier",
-        icon: "icons/skills/prettier.svg",
-        link: "https://prettier.io/",
-    },
-    {
-        name: "NPM",
-        icon: "icons/skills/npm.svg",
-        link: "https://www.npmjs.com/",
+        name: "Intellij IDEA",
+        icon: "icons/skills/intellij.svg",
+        link: "https://www.jetbrains.com/idea/",
     },
     {
         name: "Insomnia",
         icon: "icons/skills/insomnia.svg",
         link: "https://insomnia.rest/",
-    },
-    {
-        name: "VSCode",
-        icon: "icons/skills/vscode.svg",
-        link: "https://code.visualstudio.com/",
     },
     {
         name: "Markdown",
