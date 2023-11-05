@@ -199,7 +199,7 @@ const SkillColumn = ({ title, skills, icon, className }: Props) => {
             </div>
             <div className="mt-4 flex flex-row flex-wrap justify-center gap-4">
                 {skills.map((skill) => (
-                    <Skill skill={skill} />
+                    <Skill skill={skill} key={skill.name} />
                 ))}
             </div>
         </div>
