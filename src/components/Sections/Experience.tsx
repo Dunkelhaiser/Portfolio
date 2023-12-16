@@ -5,7 +5,7 @@ const experiences = [
     {
         title: "NextOne Technologies",
         subTitle: "Full-Stack Developer",
-        duration: "September 13, 2023 - Present",
+        duration: "September, 2023 - December, 2023",
         description: "Currently working as a full stack developer at NextOne Technologies.",
         icon: "/icons/companies/nextone_technologies.jpg",
         link: "https://www.linkedin.com/company/nextonetechnologies",
