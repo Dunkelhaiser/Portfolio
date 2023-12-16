@@ -124,6 +124,11 @@ const shared = [
         link: "https://www.typescriptlang.org/",
     },
     {
+        name: "tRPC",
+        icon: "icons/skills/trpc.svg",
+        link: "https://trpc.io/",
+    },
+    {
         name: "Zod",
         icon: "icons/skills/zod.svg",
         link: "https://zod.dev/",
