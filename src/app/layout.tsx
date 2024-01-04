@@ -10,8 +10,8 @@ import { Analytics } from "@vercel/analytics/react";
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
 
 export const metadata: Metadata = {
-    title: "Tymchyshyn Kyrylo | Personal Portfolio",
-    description: "Tymchyshyn Kyrylo is a full-stack developer from Ukraine.",
+    title: "Kyrylo Tymchyshyn | Personal Portfolio",
+    description: "Kyrylo Tymchyshyn is a full-stack developer from Ukraine.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
