@@ -11,7 +11,7 @@ export const sendEmail = async (data: FormValues) => {
         await formSchema.parseAsync(data);
 
         await resend.emails.send({
-            from: "onboarding@resend.dev",
+            from: "portfolio@kyrylotymchyshyn.com",
             to: "tymchyshynkyrylo@gmail.com",
             subject: `Portfolio Contact`,
             text: data.message,
