@@ -38,12 +38,17 @@ const frontendSkills = [
         link: "https://redux-toolkit.js.org/",
     },
     {
+        name: "Zustand",
+        icon: "icons/skills/zustand.svg",
+        link: "https://docs.pmnd.rs/zustand/getting-started/introduction",
+    },
+    {
         name: "React Router",
         icon: "icons/skills/react-router.svg",
         link: "https://reactrouter.com/",
     },
     {
-        name: "React Query",
+        name: "Tanstack Query",
         icon: "icons/skills/react-query.svg",
         link: "https://tanstack.com/query/latest/",
     },
@@ -62,6 +67,11 @@ const frontendSkills = [
         icon: "icons/skills/nextjs.svg",
         link: "https://nextjs.org/",
     },
+    {
+        name: "Astro",
+        icon: "icons/skills/astro.svg",
+        link: "https://astro.build/",
+    },
 ];
 
 const backendSkills = [
@@ -76,9 +86,19 @@ const backendSkills = [
         link: "https://expressjs.com/",
     },
     {
+        name: "Fastify",
+        icon: "icons/skills/fastify.svg",
+        link: "https://fastify.dev/",
+    },
+    {
         name: "NestJS",
         icon: "icons/skills/nestjs.svg",
         link: "https://nestjs.com/",
+    },
+    {
+        name: "Drizzle",
+        icon: "icons/skills/drizzle.svg",
+        link: "https://orm.drizzle.team/",
     },
     {
         name: "Prisma",
@@ -90,6 +110,11 @@ const backendSkills = [
         icon: "icons/skills/typeorm.svg",
         link: "https://typeorm.io/",
     },
+    // {
+    //     name: "Go",
+    //     icon: "icons/skills/go.svg",
+    //     link: "https://go.dev/",
+    // },
     {
         name: "Java",
         icon: "icons/skills/java.svg",
@@ -147,6 +172,11 @@ const shared = [
         name: "NPM",
         icon: "icons/skills/npm.svg",
         link: "https://www.npmjs.com/",
+    },
+    {
+        name: "PNPM",
+        icon: "icons/skills/pnpm2.svg",
+        link: "https://pnpm.io/",
     },
     {
         name: "Vitest",
