@@ -59,7 +59,7 @@ const Hero = () => {
                             </a>
                         </Button>
                         <Button size="iconLarge" variant="secondary" asChild>
-                            <a href="https://github.com/KaeserOfHonour" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://github.com/Dunkelhaiser" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <FaGithub />
                             </a>
                         </Button>
