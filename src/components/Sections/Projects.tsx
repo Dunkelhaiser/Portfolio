@@ -5,7 +5,7 @@ const projects = [
     {
         name: "Periodicum",
         description:
-            "Periodicum is an interactive periodic table of elements. It's built with React, TypeScript, and SCSS modules. It also uses i18next for support of English and Ukrainian languages. It has support for light and dark themes. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",
+            "Periodicum is an interactive periodic table of elements. It's built with React, TypeScript, and SCSS modules. It also uses i18next for support of English and Ukrainian languages. It has support for light and dark mode. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",
         link: "https://periodicum.netlify.app",
         github: "https://github.com/Dunkelhaiser/Periodicum",
         image: "/projects/periodicum.png",
@@ -14,7 +14,7 @@ const projects = [
     {
         name: "Pomei",
         description:
-            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and TailwindCSS on the front-end and Node.js, Fastify, PostgreSQL, and Drizzle ORM on the back-end. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",
+            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and TailwindCSS on the front-end and Node.js, Fastify, PostgreSQL, and Drizzle ORM on the back-end. It has support for light and dark mode. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",
         link: "https://pomei.pages.dev",
         github: "https://github.com/Dunkelhaiser/Pomei",
         image: "/projects/pomei.png",
