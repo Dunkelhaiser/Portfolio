@@ -14,11 +14,11 @@ const projects = [
     {
         name: "Pomei",
         description:
-            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and SCSS modules on the front-end and Node.js, Express.js, PostgreSQL, and Prisma on the back-end. Everything from planning and UI design to coding was made by me.",
-        link: "https://pomei.netlify.app",
-        github: "https://github.com/KaeserOfHonour/Pomei",
+            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and TailwindCSS on the front-end and Node.js, Fastify, PostgreSQL, and Drizzle ORM on the back-end. Everything from planning and UI design to coding was made by me.",
+        link: "https://pomei.pages.dev",
+        github: "https://github.com/Dunkelhaiser/Pomei",
         image: "/projects/pomei.png",
-        tags: ["React", "TypeScript", "SCSS", "Node.js", "Express.js", "Prisma", "PostgreSQL"],
+        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Fastify", "Prisma", "Dizzle ORM"],
     },
     {
         name: "Calculatrix",
