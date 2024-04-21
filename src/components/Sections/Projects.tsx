@@ -9,16 +9,28 @@ const projects = [
         link: "https://periodicum.netlify.app",
         github: "https://github.com/Dunkelhaiser/Periodicum",
         image: "/projects/periodicum.png",
-        tags: ["React", "TypeScript", "SCSS"],
+        tags: ["React", "TypeScript", "SCSS", "i18next"],
     },
     {
         name: "Pomei",
         description:
-            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and TailwindCSS on the front-end and Node.js, Fastify, PostgreSQL, and Drizzle ORM on the back-end. Everything from planning and UI design to coding was made by me.",
+            "Pomei is a full-stack note-taking app. It's built with React, TypeScript, and TailwindCSS on the front-end and Node.js, Fastify, PostgreSQL, and Drizzle ORM on the back-end. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",
         link: "https://pomei.pages.dev",
         github: "https://github.com/Dunkelhaiser/Pomei",
         image: "/projects/pomei.png",
-        tags: ["React", "TypeScript", "TailwindCSS", "Node.js", "Fastify", "Prisma", "Dizzle ORM"],
+        tags: [
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "shadcn/ui",
+            "Tanstack Router",
+            "Tanstack Query",
+            "Node.js",
+            "Fastify",
+            "Dizzle ORM",
+            "PostgreSQL",
+            "Resend",
+        ],
     },
     {
         name: "Calculatrix",
@@ -53,7 +65,7 @@ const projects = [
         link: "https://kyrylo-tymchyshyn.vercel.app",
         github: "https://github.com/Dunkelhaiser/Portfolio",
         image: "/projects/portfolio.png",
-        tags: ["NextJS", "React", "TypeScript", "TailwindCSS"],
+        tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "shadcn/ui", "Resend"],
     },
 ];
 
