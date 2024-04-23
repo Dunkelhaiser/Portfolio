@@ -3,6 +3,14 @@ import Section from "./Section";
 
 const projects = [
     {
+        name: "Caesar Cipher",
+        description:
+            "NPM library of implementation of the Caesar Cipher encryption algorithm in JavaScript. This library has built-in TypeScript types and supports JSDoc. With it user can encrypt and decrypt strings or array of strings with predefined or custom alphabets.",
+        link: "https://www.npmjs.com/package/@dunkelhaiser/caesar-cipher",
+        github: "https://github.com/Dunkelhaiser/Caesar-Cipher",
+        tags: ["TypeScript", "JSDoc", "Vitest"],
+    },
+    {
         name: "Periodicum",
         description:
             "Periodicum is an interactive periodic table of elements. It's built with React, TypeScript, and SCSS modules. It also uses i18next for support of English and Ukrainian languages. It has support for light and dark modes. This app has the support of PWA. Everything from planning and UI design to coding was made by me.",

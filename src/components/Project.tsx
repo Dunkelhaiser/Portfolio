@@ -6,7 +6,7 @@ import Image from "next/image";
 const Project = ({ name, description, link, github, image, tags }: ProjectType) => {
     return (
         <div className="max-w-prose overflow-hidden rounded-lg bg-zinc-50 shadow">
-            <Image src={image} alt={name} width={1280} height={720} />
+            {image && <Image src={image} alt={name} width={1280} height={720} />}
             <div className="flex flex-wrap gap-x-2 px-6 py-2">
                 {tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="mt-2">
