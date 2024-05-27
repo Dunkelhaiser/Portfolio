@@ -3,6 +3,14 @@ import Section from "./Section";
 
 const projects = [
     {
+        name: "Numeri Romani",
+        description:
+            "NPM library for work with Roman numbers in JavaScript. This library has built-in TypeScript types and supports JSDoc. With it user convert Arabic numbers to Roman numbers and vice-versa. It also provides RomanNumber class for storing both values and performing arithmetic operations.",
+        link: "https://www.npmjs.com/package/@dunkelhaiser/numeri-romani",
+        github: "https://github.com/Dunkelhaiser/Numeri-Romani",
+        tags: ["TypeScript", "JSDoc", "Vitest"],
+    },
+    {
         name: "Caesar Cipher",
         description:
             "NPM library of implementation of the Caesar Cipher encryption algorithm in JavaScript. This library has built-in TypeScript types and supports JSDoc. With it user can encrypt and decrypt strings or array of strings with predefined or custom alphabets.",
@@ -41,15 +49,6 @@ const projects = [
         ],
     },
     {
-        name: "Calculatrix",
-        description:
-            "Calculatrix is a simple calculator app built with React, TypeScript, and TailwindCSS. It has support for light, dark, and system themes. This app has the support of PWA. Everything from planning to coding was made by me.",
-        link: "https://calculatrix.pages.dev",
-        github: "https://github.com/Dunkelhaiser/Calculatrix",
-        image: "/projects/calculatrix.png",
-        tags: ["React", "TypeScript", "TailwindCSS"],
-    },
-    {
         name: "Sorting Visualizer",
         description:
             "It's an app for the visualization of different sorting algorithms( bubble sort, selection sort, insertion sort, merge sort, quick sort ). It’s built with React, TypeScript, and SCSS modules. Everything from planning and UI design to coding was made by me.",
@@ -57,6 +56,15 @@ const projects = [
         github: "https://github.com/Dunkelhaiser/Sorting-Visualizer",
         image: "/projects/sorting.png",
         tags: ["React", "TypeScript", "SCSS"],
+    },
+    {
+        name: "Calculatrix",
+        description:
+            "Calculatrix is a simple calculator app built with React, TypeScript, and TailwindCSS. It has support for light, dark, and system themes. This app has the support of PWA. Everything from planning to coding was made by me.",
+        link: "https://calculatrix.pages.dev",
+        github: "https://github.com/Dunkelhaiser/Calculatrix",
+        image: "/projects/calculatrix.png",
+        tags: ["React", "TypeScript", "TailwindCSS"],
     },
     {
         name: "Hangem",
