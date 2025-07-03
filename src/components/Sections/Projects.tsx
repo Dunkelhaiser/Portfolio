@@ -101,7 +101,7 @@ const projects = [
         link: "https://kyrylo-tymchyshyn.vercel.app",
         github: "https://github.com/Dunkelhaiser/Portfolio",
         image: "/projects/portfolio.png",
-        tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "shadcn/ui", "Resend"],
+        tags: ["NextJS", "React", "TypeScript", "TailwindCSS", "shadcn/ui"],
     },
 ];
 

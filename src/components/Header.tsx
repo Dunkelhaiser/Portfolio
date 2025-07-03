@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { FaHome, FaUser } from "react-icons/fa";
-import { LuMail } from "react-icons/lu";
 import { MdWorkHistory, MdSchool } from "react-icons/md";
 import { BsDiagram3Fill } from "react-icons/bs";
 import { PiProjectorScreenBold } from "react-icons/pi";
@@ -43,18 +42,13 @@ export const links = [
         icon: <MdWorkHistory />,
         href: "#experience",
     },
-    {
-        name: "Contact",
-        icon: <LuMail />,
-        href: "#contact",
-    },
 ] as const;
 
 const Header = () => {
     const { activeSection } = useContext(SectionContext);
     return (
         <motion.header
-            className="fixed right-8 top-1/2 z-[999] h-[27.35rem] w-[3.25rem] rounded-lg bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur [--horizontal-from:100px] [--horizontal-to:0px] [--vertical-from:-50%] [--vertical-to:-50%] max-sm:bottom-6 max-sm:left-6 max-sm:right-6 max-sm:top-auto max-sm:h-[3.25rem] max-sm:w-auto max-sm:[--horizontal-from:0px] max-sm:[--horizontal-to:0px] max-sm:[--vertical-from:50%] max-sm:[--vertical-to:0%]"
+            className="fixed right-8 top-1/2 z-[999] h-[23.5rem] w-[3.25rem] rounded-lg bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur [--horizontal-from:100px] [--horizontal-to:0px] [--vertical-from:-50%] [--vertical-to:-50%] max-sm:bottom-6 max-sm:left-6 max-sm:right-6 max-sm:top-auto max-sm:h-[3.25rem] max-sm:w-auto max-sm:[--horizontal-from:0px] max-sm:[--horizontal-to:0px] max-sm:[--vertical-from:50%] max-sm:[--vertical-to:0%]"
             initial={{ x: "var(--horizontal-from)", y: "var(--vertical-from)", opacity: 0 }}
             animate={{ x: "var(--horizontal-to)", y: "var(--vertical-to)", opacity: 1 }}
             transition={{ delay: 0.25 }}

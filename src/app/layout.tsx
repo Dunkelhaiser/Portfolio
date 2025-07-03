@@ -4,7 +4,6 @@ import Providers from "@components/Providers";
 import Header from "@components/Header";
 import "./globals.css";
 import Intro from "@components/Intro";
-import { Toaster } from "@ui/Toaster";
 import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
@@ -24,7 +23,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Header />
                     <Intro>
                         <main>{children}</main>
-                        <Toaster />
                     </Intro>
                 </Providers>
                 <Analytics />

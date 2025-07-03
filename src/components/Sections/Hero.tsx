@@ -42,7 +42,7 @@ const Hero = () => {
                             </a>
                         </Button>
                         <Button size="large" variant="secondary" asChild>
-                            <a href="#contact">
+                            <a href="mailto:tymchyshynkyrylo@gmail.com?subject=Portfolio%20Contact">
                                 Contact <LuMail />
                             </a>
                         </Button>
