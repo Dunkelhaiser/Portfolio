@@ -33,14 +33,14 @@ export const links = [
         href: "#education",
     },
     {
-        name: "Projects",
-        icon: <PiProjectorScreenBold />,
-        href: "#projects",
-    },
-    {
         name: "Experience",
         icon: <MdWorkHistory />,
         href: "#experience",
+    },
+    {
+        name: "Projects",
+        icon: <PiProjectorScreenBold />,
+        href: "#projects",
     },
 ] as const;
 
