@@ -3,6 +3,26 @@ import Section from "./Section";
 
 const projects = [
     {
+        name: "Maps Modelier",
+        description:
+            "Was created as my Bachelor's work. It is a desktop application for the creation of interactive political maps. It allows users to create political maps with custom countries, geography, add population, and country data, such as state attributes, political parties, alliances, and more.",
+        github: "https://github.com/Dunkelhaiser/maps-modelier",
+        image: "/projects/maps_modelier.png",
+        tags: [
+            "Electron",
+            "React",
+            "TypeScript",
+            "Node.js",
+            "PixiJS",
+            "TailwindCSS",
+            "Tanstack Query",
+            "Zustand",
+            "Zod",
+            "Dizzle ORM",
+            "SQLite",
+        ],
+    },
+    {
         name: "Numeri Romani",
         description:
             "NPM library for work with Roman numbers in JavaScript. This library has built-in TypeScript types and supports JSDoc. With it user convert Arabic numbers to Roman numbers and vice-versa. It also provides RomanNumber class for storing both values and performing arithmetic operations.",

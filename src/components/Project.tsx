@@ -18,11 +18,13 @@ const Project = ({ name, description, link, github, image, tags }: ProjectType) 
                 <h3 className="text-2xl font-bold">{name}</h3>
                 <p className="mt-2 text-zinc-700">{description}</p>
                 <div className="mt-2 flex flex-row gap-2">
-                    <Button size="small" variant="primary" asChild>
-                        <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Live">
-                            Live
-                        </a>
-                    </Button>
+                    {link && (
+                        <Button size="small" variant="primary" asChild>
+                            <a href={link} target="_blank" rel="noopener noreferrer" aria-label="Live">
+                                Live
+                            </a>
+                        </Button>
+                    )}
                     <Button size="small" variant="ghost" asChild>
                         <a href={github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Repo">
                             GitHub
