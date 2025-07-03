@@ -3,11 +3,12 @@ import Section from "./Section";
 
 const education = [
     {
-        title: "Secondary High School №63",
-        duration: "September 2011 - June 2018",
-        description: "It was my first school where I studied up to 7th class.",
-        icon: "/icons/education/63.png",
-        link: "https://www.school63.school.social/",
+        title: "Ivan Franko National University of Lviv",
+        subTitle: "Faculty of Electronics and Computer Technologies",
+        duration: "September 2021 - June 2025",
+        description: "I hold a Bachelor's degree in Computer Science.",
+        icon: "/icons/education/lnu.png",
+        link: "https://lnu.edu.ua/",
     },
     {
         title: "Lviv Academic Gymnasium",
@@ -17,12 +18,11 @@ const education = [
         link: "https://lag.lviv.ua/",
     },
     {
-        title: "Ivan Franko National University of Lviv",
-        subTitle: "Faculty of Electronics and Computer Technologies",
-        duration: "September 2021 - Present",
-        description: "Currently I'm studying computer sciense at Lviv National University.",
-        icon: "/icons/education/lnu.png",
-        link: "https://lnu.edu.ua/",
+        title: "Secondary High School №63",
+        duration: "September 2011 - June 2018",
+        description: "It was my first school where I studied up to 7th class.",
+        icon: "/icons/education/63.png",
+        link: "https://www.school63.school.social/",
     },
     {
         title: "Udemy",
